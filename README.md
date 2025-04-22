@@ -56,4 +56,13 @@ npm install antd
 │   ├── database.sql       # Database schema
 │   └── package.json
 └── README.md
-``` 
+```
+
+Members & Work Distribution:
+```bash
+Alvyn - Project Setup, General Functionality, Frontend + Backend, error handling 
+Victor - Project Setup, General Functionality, Frontend + Backend, error handling
+Tracy - Repo fixes, error handling
+Wesley - Repo fixes, error handling
+```
+
