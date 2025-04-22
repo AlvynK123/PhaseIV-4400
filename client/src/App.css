@@ -1,0 +1,162 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+.card {
+  background-color: #fff;
+  border: none;
+  margin-bottom: 0px;
+}
+
+.button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #333;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.App {
+  min-height: 100vh;
+  background: #fff;
+}
+
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: #000;
+  padding: 0 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  height: 64px;
+}
+
+.header-logo {
+  font-size: 24px;
+  color: white;
+  margin-right: 16px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.header-title {
+  color: white !important;
+  margin: 0 !important;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.site-layout-background {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.site-layout-content {
+  background: #fff;
+  min-height: calc(100vh - 64px);
+  padding: 0;
+}
+
+.content-container {
+  padding: 0;
+  background: #fff;
+}
+
+.ant-menu {
+  background: transparent !important;
+}
+
+.ant-menu-item {
+  margin: 4px 0 !important;
+  border-radius: 4px !important;
+}
+
+.ant-menu-item-selected {
+  background: #e6e6e6 !important;
+  color: #000 !important;
+}
+
+.ant-table {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ant-card {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.ant-card:hover {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transform: none;
+}
+
+.ant-card-head {
+  background: #fafafa;
+  border-radius: 8px 8px 0 0;
+}
+
+.ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: #f5f5f5;
+}
+
+.ant-card-body {
+  padding: 10px !important;
+}
+
+/* Flight-themed animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.floating-sidebar {
+  height: calc(100vh - 64px);
+  position: fixed;
+  top: 64px;
+  left: 0;
+  z-index: 10;
+}
+
+/* Add this to handle mobile screens */
+@media (max-width: 768px) {
+  .floating-sidebar {
+    display: none;
+  }
+  
+  .content-container {
+    margin-left: 0;
+  }
+}
